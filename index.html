@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container d-flex">
+            <div class="header-logo">
+                <a href="#home" class="logo-link">Logo</a>
+            </div>
+            <nav class="header-menu d-flex">
+                <a href="#about" class="menu-link">about</a>
+                <a href="#works" class="menu-link">works</a>
+                <a href="#contact" class="menu-link">contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="section" id="home">
+        <div class="container">
+            <h1 class="home-title">Frontend Developer</h1>
+            <a href="#about" class="home-link">
+                <i class="fas fa-arrow-alt-circle-down"></i>
+            </a>
+        </div>
+    </section>
+    <section class="section" id="about">
+        <div class="container d-flex">
+            <div class="about-photo animate__animated  animate__backInLeft"></div>
+            <div class="about-info">
+                <p class="animate__animated  animate__backInRight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quia corrupti temporibus possimus
+                    culpa commodi nostrum expedita libero, quod quo tempora ducimus sequi eum neque et deserunt
+                    architecto obcaecati assumenda perferendis quis fugiat. Explicabo saepe nisi vitae provident dolore
+                    accusantium laborum vel fugit iure, deleniti error quidem reprehenderit accusamus autem excepturi?
+                    Exercitationem commodi eaque distinctio natus, porro consequuntur aliquid non eius consectetur?
+                    Minima, inventore reprehenderit minus nulla praesentium quas quis. Sunt, deserunt porro. Deleniti
+                    at, odio quaerat blanditiis enim ab sequi neque veniam eaque, laudantium accusantium eius eveniet
+                    aliquid, velit autem aliquam voluptates nobis quasi culpa ipsum amet eligendi harum?</p>
+                <div class="about-icons animate__animated  animate__backInRight">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-css3-alt"></i>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section" id="works">
+        <div class="container d-flex animate__animated animate__zoomInDown">
+            <div class="works-box animate__animated animate__zoomInDown"><a href="https://anastasialoz.github.io/batman/">
+                    <img src="./img/batman.png" alt="">
+                    <h2 class="works-title">Batman</h2>
+                </a></div>
+            <div class="works-box animate__animated animate__zoomInDown"><a href="https://anastasialoz.github.io/mishka/">
+                    <img src="./img/mishka.png" alt="">
+                    <h2 class="works-title">Mishka</h2>
+                </a></div>
+            <div class="works-box animate__animated animate__zoomInDown"><a href="https://anastasialoz.github.io/deliveryfood/">
+                    <img src="./img/delivery.png" alt="">
+                    <h2 class="works-title">Delivery food</h2>
+                </a></div>
+            <div class="works-box animate__animated animate__zoomInDown"><a href="https://anastasialoz.github.io/cat/">
+                    <img src="./img/cat.png" alt="">
+                    <h2 class="works-title">Cat</h2>
+                </a></div>
+        </div>
+    </section>
+    <section class="section" id="contact">
+        <div class="container d-flex">
+            <div class="contact-data">
+                <p>Phone: +38(093)-333-33-33</p>
+                <p>Email: frontend@gmail.com</p>
+                <div class="contact-form">
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" placeholder="name here ...">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="email here ...">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="description here..." cols="30" rows="10"></textarea>
+                        </div>
+                        <input type="button" value="send"  class="contact-button">
+                    </form>
+                </div>
+                <div class="contact-social">
+                    <a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                    <a target="_blank" href="https://www.github.com"><i class="fab fa-github-square"></i></a>
+                </div>
+            </div>
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9662.485265118365!2d33.48169491823217!3d46.8025033816152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1590917109658!5m2!1sru!2sua"
+                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container d-flex">
+            <nav class="footer-menu d-flex">
+                <a href="#about" class="menu-link">about</a>
+                <a href="#works" class="menu-link">works</a>
+                <a href="#contact" class="menu-link">contact</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

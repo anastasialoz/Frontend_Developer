@@ -1,0 +1,262 @@
+@import url(./reset.css);
+@import url(./fonts.css);
+
+body{
+    font-family: 'Yeseva One'
+}
+
+.container{
+    width: 90%;
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header{
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 0 15px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.header-logo{
+    width: 20%;
+}
+
+.logo-link{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.header-menu{
+    width: 50%;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition-duration: 0.3s;
+}
+.menu-link:hover{
+    transform: scale(1.2);
+    border-bottom: 2px solid #000;
+
+}
+.section{
+    height: 100vh;
+    padding-top: 60px;
+}
+#home{
+    background-image: url(../img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#about{
+    background-color: #fefefe;
+}
+#works{
+    background-image: url(../img/works.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0 15%;
+}
+.home-title{
+    position: absolute;
+    top: 10%;
+    right: 7%;
+    font-size: 60px;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+.home-link{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+    border-radius: 50%;
+    text-shadow: 0px 0px 4px white;
+    animation-name: pulse ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.home-link:hover{
+    transition: 1s;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+    text-shadow: 0px 0px 4px black;
+    animation-name: pulse-reverse ;
+}
+@keyframes pulse{
+    0%{
+        box-shadow: 0px 0px 4px rgba(225, 225, 225, 1);
+        bottom: 50px;
+    }
+    50%{
+        bottom: 60px;
+    }
+    100%{
+        box-shadow: 0px 0px 40px rgba(225, 225, 225, 0);
+        bottom: 50px;
+    }
+}
+@keyframes pulse-reverse{
+    0%{
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+        bottom: 50px;
+    }
+    50%{
+        bottom: 60px;
+    }
+    100%{
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0);
+        bottom: 50px;
+    }
+}
+.about-photo{
+    width: 30%;
+    height: 70vh;
+    background-color: black;
+}
+.about-info{
+    width: 50%;
+}
+.about-info p {
+    text-align: center;
+    font-style: 18px;
+    line-height: 22px;
+}
+.about-icons{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 80px;
+}
+.works-box{
+    width: 25vw;
+    height: 15vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fefefe;
+    transition-duration: 0.7s;
+    transition-property: transformbox box-shadow;
+}
+.works-box:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0 0 20px #fefefe;
+}
+.works-box img{
+    display: block;
+    width: 60%;
+    height: 50%;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.works-box a{
+    text-decoration: none;
+}
+.works-title{
+    text-align: center;
+    font-size: 150%;
+    color: black;
+}
+.contact-data{
+    width: 30%;
+}
+
+.contact-map{
+    width: 60%;
+    height: 80vh;
+}
+
+.form-group input{
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.form-group textarea{
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.contact-social{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.contact-social a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+.contact-button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: black;
+    color: #fefefe;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    font-size: 20px;
+
+}
+.contact-button:hover{
+    transition-duration: 0.3s;
+    color: black;
+    background-color: #fefefe;
+    border: 2px solid black;
+}
+#contact{
+    margin-bottom: 50px;
+}
+.footer{
+    background-color: black;
+    height: 60px;
+}
+.footer-menu{
+    margin: auto auto;
+    width: 30%;
+}
+.footer-menu a{
+    color: white;
+    font-size: 100%;
+}
